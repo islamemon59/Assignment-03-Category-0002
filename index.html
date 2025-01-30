@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,22 +10,67 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/b5d6806fe2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b5d6806fe2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              'accent': '#179800',
+              'secondary': '#EFEBE3',
+              'dark1': '#111111',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .poppins {
+        font-family: "Poppins", serif;
+      }
+      .sora {
+        font-family: "Sora", serif;
+      }
+    </style>
   </head>
   <body>
     <!-- Header section  -->
-    <header></header>
+    <header class="md:container md:mx-auto">
+      <!-- Nav section  -->
+        <nav class="sora py-5 border border-accent md:border-none lg:border-none">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-xl">
+                <img src="c2-assets/logo-header.png">
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-[1.25rem] text-dark1">Product</a></li>
+                <li><a class="text-[1.25rem] text-dark1">Services</a></li>
+                <li><a class="text-[1.25rem] text-dark1">Contact US</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-4">
+              <i class="block md:hidden lg:hidden text-[2rem] mr-5 fa-solid fa-bars"></i>
+                <i class="hidden md:block lg:block text-[1.25rem] fa-solid fa-magnifying-glass"></i>
+                <i class="hidden md:block lg:block text-[1.25rem] fa-solid fa-cart-shopping"></i>
+                <button class="hidden md:block lg:block btn border-accent bg-secondary hover:bg-accent px-7 text-[1.25rem] text-dark1">Login</button>
+                <button class="hidden md:block lg:block btn bg-accent hover:bg-secondary px-7 text-[1.25rem] text-secondary">Register</button>
+            </div>
+          </div>
+        </nav>
+    </header>
     <!-- main section  -->
     <main></main>
     <!-- Footer section  -->
