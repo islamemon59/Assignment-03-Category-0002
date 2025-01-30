@@ -26,9 +26,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              'accent': '#179800',
-              'secondary': '#EFEBE3',
-              'dark1': '#111111',
+              accent: "#179800",
+              secondary: "#EFEBE3",
+              dark1: "#111111",
             },
           },
         },
@@ -45,31 +45,72 @@
   </head>
   <body>
     <!-- Header section  -->
-    <header class="md:container md:mx-auto">
+    <header
+      class="sora bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(239,235,227,1)]"
+    >
       <!-- Nav section  -->
-        <nav class="sora py-5 border border-accent md:border-none lg:border-none">
-          <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <a class="btn btn-ghost text-xl">
-                <img src="c2-assets/logo-header.png">
-              </a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a class="text-[1.25rem] text-dark1">Product</a></li>
-                <li><a class="text-[1.25rem] text-dark1">Services</a></li>
-                <li><a class="text-[1.25rem] text-dark1">Contact US</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end space-x-4">
-              <i class="block md:hidden lg:hidden text-[2rem] mr-5 fa-solid fa-bars"></i>
-                <i class="hidden md:block lg:block text-[1.25rem] fa-solid fa-magnifying-glass"></i>
-                <i class="hidden md:block lg:block text-[1.25rem] fa-solid fa-cart-shopping"></i>
-                <button class="hidden md:block lg:block btn border-accent bg-secondary hover:bg-accent px-7 text-[1.25rem] text-dark1">Login</button>
-                <button class="hidden md:block lg:block btn bg-accent hover:bg-secondary px-7 text-[1.25rem] text-secondary">Register</button>
-            </div>
+      <nav
+        class="py-5 border border-accent md:border-none lg:border-none bg-transparent md:container md:mx-auto"
+      >
+        <div class="navbar">
+          <!-- nav logo  -->
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-xl">
+              <img src="c2-assets/logo-header.png" />
+            </a>
           </div>
-        </nav>
+          <!-- nav item  -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-[1.25rem] text-dark1">Product</a></li>
+              <li><a class="text-[1.25rem] text-dark1">Services</a></li>
+              <li><a class="text-[1.25rem] text-dark1">Contact US</a></li>
+            </ul>
+          </div>
+          <!-- nav buttons icon  -->
+          <div class="navbar-end space-x-4">
+            <i
+              class="block md:hidden lg:hidden text-[2rem] mr-5 fa-solid fa-bars"
+            ></i>
+            <i
+              class="hidden md:block lg:block text-[1.25rem] fa-solid fa-magnifying-glass"
+            ></i>
+            <i
+              class="hidden md:block lg:block text-[1.25rem] fa-solid fa-cart-shopping"
+            ></i>
+            <button
+              class="hidden md:block lg:block btn border-accent bg-secondary hover:bg-accent px-7 text-[1.25rem] text-dark1"
+            >
+              Login
+            </button>
+            <button
+              class="hidden md:block lg:block btn bg-accent hover:bg-secondary hover:text-dark1 px-7 text-[1.25rem] text-secondary"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <div class="banner md:container md:mx-auto">
+        <!-- banner text section  -->
+        <div class="text-center mt-16 justify-items-center space-y-8">
+          <h1 class="text-[2.1rem] md:text-[3rem] lg:text-[3.5rem] text-dark1 font-semibold">Freshness <span class="text-accent">You Can <br> Count On</span>, Prices You’ll Love!</h1>
+          <p class=" md:w-[40rem] lg:w-[50rem] text-[1rem] lg:text-[1.25rem] text-dark1">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <!-- animation section  -->
+        <div class="flex justify-evenly">
+          <img class="w-8 lg:w-12 animate-spin" src="c2-assets/tomato.png" alt="tomato.png">
+          <img class="w-8 lg:w-12 animate-spin" src="c2-assets/vagetable.png" alt="vegetable.png">
+        </div>
+        <!-- hero image section  -->
+        <div class="justify-items-center">
+          <img src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+      </div>
     </header>
     <!-- main section  -->
     <main></main>
